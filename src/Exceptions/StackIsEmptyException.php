@@ -1,6 +1,6 @@
 <?php
 
-namespace Ghosty\Component\List\Exceptions;
+namespace Ghosty\Component\Stack\Exceptions;
 
 class StackIsEmptyException extends \RuntimeException
 {

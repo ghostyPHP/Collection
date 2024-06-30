@@ -1,11 +1,11 @@
 <?php
 
-namespace Ghosty\Component\List;
+namespace Ghosty\Component\Stack;
 
-use Ghosty\Component\List\Contracts\AbstractListContract;
-use Ghosty\Component\List\Exceptions\StackIsEmptyException;
+use Ghosty\Component\Stack\Contracts\AbstractStackContract;
+use Ghosty\Component\Stack\Exceptions\StackIsEmptyException;
 
-class AbstractList implements AbstractListContract
+class AbstractStack implements AbstractStackContract
 {
     private array $stack = [];
 

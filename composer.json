@@ -1,11 +1,11 @@
 {
-    "name": "ghosty/list",
-    "description": "The Ghosty List component",
+    "name": "ghosty/stack",
+    "description": "The Ghosty Stack component",
     "type": "package",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Ghosty\\Component\\List\\": "src/"
+            "Ghosty\\Component\\Stack\\": "src/"
         }
     },
     "authors": [

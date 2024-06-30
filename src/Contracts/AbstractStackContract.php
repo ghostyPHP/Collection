@@ -1,8 +1,8 @@
 <?php
 
-namespace Ghosty\Component\List\Contracts;
+namespace Ghosty\Component\Stack\Contracts;
 
-interface AbstractListContract
+interface AbstractStackContract
 {
     public function push(mixed $item): void;
 

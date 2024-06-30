@@ -33,4 +33,14 @@ class AbstractStack implements AbstractStackContract
     {
         return empty($this->stack);
     }
+
+    public function __toArray(): array
+    {
+        return $this->stack;
+    }
+
+    public function clear(): void
+    {
+        $this->stack = [];
+    }
 }

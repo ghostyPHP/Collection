@@ -11,4 +11,8 @@ interface AbstractStackContract
     public function top(): mixed;
 
     public function isEmpty(): bool;
+
+    public function clear(): void;
+
+    public function __toArray(): array;
 }

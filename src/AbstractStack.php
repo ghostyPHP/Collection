@@ -7,7 +7,7 @@ use Ghosty\Component\Stack\Exceptions\StackIsEmptyException;
 
 class AbstractStack implements AbstractStackContract
 {
-    private array $stack = [];
+    protected array $stack = [];
 
     public function push(mixed $item): void
     {

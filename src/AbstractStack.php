@@ -5,7 +5,7 @@ namespace Ghosty\Component\Stack;
 use Ghosty\Component\Stack\Contracts\AbstractStackContract;
 use Ghosty\Component\Stack\Exceptions\StackIsEmptyException;
 
-class AbstractStack implements AbstractStackContract
+abstract class AbstractStack implements AbstractStackContract
 {
     protected array $stack = [];
 

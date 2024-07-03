@@ -4,7 +4,7 @@ namespace Ghosty\Component\Stack\Contracts;
 
 interface AbstractStackContract
 {
-    public function push(mixed $item): void;
+    public function push(mixed $item): static;
 
     public function pop(): mixed;
 
@@ -12,7 +12,7 @@ interface AbstractStackContract
 
     public function isEmpty(): bool;
 
-    public function clear(): void;
+    public function clear(): static;
 
     public function __toArray(): array;
 }

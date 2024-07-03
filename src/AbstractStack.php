@@ -9,9 +9,11 @@ abstract class AbstractStack implements AbstractStackContract
 {
     protected array $stack = [];
 
-    public function push(mixed $item): void
+    public function push(mixed $item): static
     {
         $this->stack[] = $item;
+
+        return $this;
     }
 
     public function pop(): mixed
@@ -39,8 +41,10 @@ abstract class AbstractStack implements AbstractStackContract
         return $this->stack;
     }
 
-    public function clear(): void
+    public function clear(): static
     {
         $this->stack = [];
+
+        return $this;
     }
 }

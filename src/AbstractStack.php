@@ -11,7 +11,7 @@ abstract class AbstractStack implements AbstractStackContract
 
     public function push(mixed $item): static
     {
-        $this->stack[] = $item;
+        array_unshift($this->stack, $item);
 
         return $this;
     }
